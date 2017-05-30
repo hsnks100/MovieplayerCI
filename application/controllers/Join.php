@@ -20,6 +20,7 @@ class Join extends CI_Controller {
 	 */
 	public function index()
 	{
+        $this->load->database(); 
         $this->load->model('join_model');
 
         $data['result'] = $this->join_model->getData();
