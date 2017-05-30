@@ -27,7 +27,6 @@ class Join extends CI_Controller {
 
         $this->load->view('join_view',$data);
 
-		$this->load->view('welcome_message');
 	}
 }
 
