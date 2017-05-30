@@ -8,7 +8,7 @@ class Join_model extends CI_Model {
     function getData()
     {
         // member테이블의 모든 레코드를 불러 옴.
-        $query = $this->db->get('member');
+        $query = $this->db->get('mp_member');
         
         if ($query->num_rows() > 0)
         {
