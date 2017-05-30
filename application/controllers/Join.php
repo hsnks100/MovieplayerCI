@@ -20,9 +20,9 @@ class Join extends CI_Controller {
 	 */
 	public function index()
 	{
-        $this->load->model('Join_model');
+        $this->load->model('join_model');
 
-        $data['result'] = $this->Join_model->getData();
+        $data['result'] = $this->join_model->getData();
         $data['page_title'] = "CI Hello World App!";
 
         $this->load->view('join_view',$data);
