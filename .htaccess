@@ -1,8 +1,6 @@
 RewriteEngine on
-RewriteCond $1 !^(index\.php|/img|/js|/css|/robots\.txt|/favicon\.ico)
+RewriteCond $1 !^(index\.php|/img|/js|/css|/robots\.txt|/favicon\.ico|githook\.php)
 RewriteRule ^(.*)$ /ci/index.php/$1 [L]
 
-RewriteCond githook.php
-RewriteRule ^(.*)$ /ci/githook.php
 
 
