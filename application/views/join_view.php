@@ -5,6 +5,7 @@
     <body>
         <?php foreach($result as $row):?>
         <h3><?=$row->name?></h3>
+        <p><?=$row->age?></p>
         <p><?=$row->email?></p>
         <br />
         <?php endforeach;?>

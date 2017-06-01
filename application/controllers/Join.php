@@ -43,7 +43,7 @@ class Join extends CI_Controller {
         )); 
 
         $this->load->helper('url');
-        redirect('/'); 
+        redirect('/ci/join'); 
     }
 }
 
