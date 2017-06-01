@@ -32,7 +32,6 @@ class Join_model extends CI_Model {
     function add($option)
     {
 
-        $this->_head();
 
         $this->load->library('form_validation');
 
