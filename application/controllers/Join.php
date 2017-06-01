@@ -32,9 +32,9 @@ class Join extends CI_Controller {
     public function join_ok(){
         $this->load->model('join_model');
         $this->join_model->add(array(
-            'name'=>$this->input->post('name'),
-            'age'=>$this->input->post('age'),
-            'email'=>$this->input->post('email')
+            'name'=>$this->input->get('name'),
+            'age'=>$this->input->get('age'),
+            'email'=>$this->input->get('email')
         )); 
     }
 }
