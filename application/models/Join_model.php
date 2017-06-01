@@ -31,6 +31,11 @@ class Join_model extends CI_Model {
 
     function add($option)
     {
+
+        $this->_head();
+
+        $this->load->library('form_validation');
+
         $this->db->set('name', $option['name']);
         $this->db->set('age', $option['age']);
         $this->db->set('email', $option['email']);
