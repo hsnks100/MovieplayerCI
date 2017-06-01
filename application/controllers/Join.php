@@ -26,6 +26,11 @@ class Join extends CI_Controller {
         $data['result'] = $this->join_model->getData();
         $data['page_title'] = "CI Hello World App!";
 
+
+        $this->load->library('form_validation');
+
+                
+
         $this->load->view('join_view',$data);
 
 	}
@@ -36,6 +41,9 @@ class Join extends CI_Controller {
             'age'=>$this->input->get('age'),
             'email'=>$this->input->get('email')
         )); 
+
+        $this->load->helper('url');
+        redirect('/'); 
     }
 }
 
